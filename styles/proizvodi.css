@@ -1,0 +1,44 @@
+
+.nazivSekcije{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nazivSekcije h1{
+    display: inline-block;
+    max-width: 170px;
+    border-bottom: 3px solid orangered;
+}
+
+.allProductSection{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-color: rgb(250, 243, 233);
+}
+
+.allProductSection .item{
+    text-align: center;
+    border-radius: 10px;
+}
+
+.allProductSection img{
+    width: 250px;
+    height: 280px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.allProductSection .item img:hover{
+    transform: scale(110%);
+    transition: 0.4s;
+}
+
+@media (max-width:480px){
+    .allProductSection{
+        display: block;
+    }
+}

@@ -1,0 +1,437 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Calibri, Helvetica, sans-serif;  
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(
+    180deg,
+    hsl(37deg 100% 50%) 0%,
+    hsl(37deg 100% 55%) 11%,
+    hsl(37deg 100% 61%) 22%,
+    hsl(37deg 100% 67%) 33%,
+    hsl(37deg 100% 72%) 44%,
+    hsl(37deg 100% 78%) 55%,
+    hsl(37deg 100% 83%) 66%,
+    hsl(37deg 100% 89%) 77%,
+    hsl(36deg 100% 95%) 89%,
+    hsl(0deg 0% 100%) 100%
+    );
+}
+
+
+header .openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+header .closeMenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+header img{
+    height: 100px;
+    width: 100px;
+    padding-top: 20px;
+}
+
+.list ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list ul li{
+    list-style: none;
+    margin-left: 25px;
+    padding-top: 35px;
+    text-transform: uppercase;
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.list ul li a:hover{
+    color: orangered;
+    transition: 0.3s;
+}
+
+.list ul li a span{
+    border: 1px solid orangered;
+    border-radius: 15px;
+    padding: 12px 20px;
+    color: orangered;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.list ul li a span:hover{
+    color: white;
+    transition: 0.3s;
+    background-color: orangered;
+}
+
+.list ul a i{
+    color: black;
+    padding-left: 25px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.list ul a i:hover{
+    color: orangered;
+    transition: 0.3s;
+}
+
+.pictureSection{
+    margin-top: 40px;
+}
+
+.pictureSection img{
+    width: 100%;
+    height: 90vh;
+    background-repeat: no-repeat;
+}
+
+.mainSection{
+    text-align: center;
+}
+
+.mainSection h1{
+    text-transform: uppercase;
+    margin-top: 100px;
+    display: inline-block;
+    max-width: 130px;
+    border-bottom: 3px solid orangered;
+}
+
+.mainSection p{
+    line-height: 20px;
+    font-size: large;
+    margin-top: 30px;
+}
+
+.productsSection{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 80px;
+    background-color: rgb(250, 243, 233);
+}
+
+.productsSection .item{
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+.productsSection .item h2:after { 
+    content:"";
+    display:block;
+    width: 6em;
+    max-width:70%;
+    border: 2px solid orangered;
+    margin: 10px 85px;
+}
+
+.productsSection img{
+    width: 300px;
+    height: 420px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 9px 21px 7px rgba(255,69,0,0.76);
+    -moz-box-shadow: 1px 9px 21px 7px rgba(255,69,0,0.76);
+    box-shadow: 1px 9px 21px 7px rgba(255,69,0,0.76);
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.productsSection .item img:hover{
+    transform: scale(110%);
+    transition: 0.4s;
+}
+
+.btnOffer{
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+    background-color: rgb(250, 243, 233);
+}
+
+.btnOffer a{
+    border: 1px solid orangered;
+    border-radius: 15px;
+    padding: 12px 20px;
+    color: orangered;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btnOffer a:hover{
+    color: white;
+    transition: 0.3s;
+    background-color: orangered;
+}
+
+.uslugaSection{
+    text-align: center;
+}
+
+.uslugaSection h1{
+    text-transform: uppercase;
+    margin-top: 100px;
+    display: inline-block;
+    max-width: 130px;
+    border-bottom: 3px solid orangered;
+}
+
+.uslugaSection p{
+    line-height: 20px;
+    font-size: large;
+    margin-top: 30px;
+}
+
+.uslugaSection i{
+    font-size: 60px;
+    color: orangered;
+}
+
+.allIcons .icons{
+    display: inline-flex;
+    margin-top: 100px;
+    padding-left: 80px;
+}
+
+.allIcons .icons p{
+    padding-left: 20px;
+    margin-top: -2px;
+    line-height: 33px;
+}
+
+.allBrands{
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgb(250, 243, 233);
+    padding-bottom: 80px;
+}
+
+.allBrands h1{
+    text-transform: uppercase;
+    padding-top: 50px;
+    display: inline-block;
+    max-width: 170px;
+    border-bottom: 3px solid orangered;
+}
+
+.allBrands img{
+    width: 150px;
+    height: 90px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.allBrands img:hover{
+    animation: infinite;
+}
+
+.preReviewSection{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.preReviewSection h1{
+    display: inline-block;
+    max-width: 170px;
+    border-bottom: 3px solid orangered;
+}
+
+.reviewSection{
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reviewSection .item{
+    border: 2px solid orangered;
+    background-color: rgb(250, 243, 233);
+    padding-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.reviewSection .item:hover{
+    transform: scale(110%);
+    transition: 0.4s;
+    overflow: none;
+}
+
+.reviewSection img{
+    width: 200px;
+    width: 250px;
+    border-radius: 100%;
+}
+
+.reviewSection .item p{
+    max-width: 300px;
+    padding: 10px;
+}
+
+footer{
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+footer .item h3{
+    border-bottom: 2px solid orangered;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+footer .item ul li{
+    list-style: none;
+    line-height: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+footer .item ul li:hover{
+    text-align: center;
+    transition: 0.3s;
+}
+
+footer .item i{
+    color: orange;
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+footer .item i:hover{
+    color: orangered;
+}
+
+.post-footer{
+    text-align: center;
+    background-color: rgb(95, 94, 94);
+    padding: 8px;
+}
+
+.post-footer strong{
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+
+    header .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 5;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: hsl(37, 95%, 57%) 22%;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    header .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header .openMenu{
+        display: block;
+        position: relative;
+        right: -150px;
+        top: 20px;
+    }
+
+    header .mainMenu li a:hover{
+        background: none;
+        color: rgba(255, 255, 255, 0.815);
+    }
+
+
+
+    .pictureSection img{
+        width: 110vh;
+        height: auto;
+    }
+
+    .productsSection{
+        display: block;
+        padding-bottom: 20px;
+    }
+
+    .productsSection .item h2:after{
+        display: none;
+    }
+
+    .uslugaSection{
+        padding: 50px;
+    }
+
+
+    .reviewSection{
+        display: block;
+        max-width: 350px;
+        margin-left: 160px;
+    }
+
+    .reviewSection .item{
+        margin-bottom: 50px;
+        margin-left: 80px;
+    }
+
+    .pictureSection{
+        width: 80vh;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    }
+
+    footer .map{
+        padding: 10px;
+    }
+      
+}
+
+
+@media (max-width: 480px){
+    header img{
+        margin-left: 150px;
+    }
+}
